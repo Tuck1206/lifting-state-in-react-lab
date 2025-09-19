@@ -37,8 +37,9 @@ const App = () => {
   };
 
   return (
-    <main>
+    <>
       <h1>Burger Stacker</h1>
+    <main>
       <section className="burger-builder">
         <IngredientList
           ingredients={availableIngredients}
@@ -49,6 +50,7 @@ const App = () => {
         onRemove={removeFromBurger} />
       </section>
     </main>
+  </>
   );
 };
 
